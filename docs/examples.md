@@ -4,7 +4,7 @@
 
 Add your files to the input directory of the mounted container.
 
-```shell
+```sh
 docker run -it --rm \
   -u $(id -u):$(id -g) \
   -v ${PWD}/input:/app/input \
@@ -17,7 +17,7 @@ By default, it will find all files from the `/app/input` directory (recursively)
 
 Detect stream order for a specific file.
 
-```shell
+```sh
 docker run -it --rm \
   -u $(id -u):$(id -g) \
   -v ${PWD}/input:/app/input \
@@ -29,7 +29,7 @@ docker run -it --rm \
 
 Detect stream order for files in a specific subdirectory.
 
-```shell
+```sh
 docker run -it --rm \
   -u $(id -u):$(id -g) \
   -v ${PWD}/input:/app/input \
@@ -41,7 +41,7 @@ docker run -it --rm \
 
 Detect stream order for files in multiple input subdirectories.
 
-```shell
+```sh
 docker run -it --rm \
   -u $(id -u):$(id -g) \
   -v ${PWD}/input:/app/input \
